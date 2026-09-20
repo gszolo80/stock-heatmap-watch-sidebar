@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "A股市场热力树图-自选侧边栏",
+  "version": "1.0.1-beta",
+  "description": "纯前端 A股实时热力树图：腾讯行情 + 新浪指数 + 申万行业，加入自选股功能",
+  "permissions": ["storage", "declarativeNetRequest"],
+  "host_permissions": [
+    "https://qt.gtimg.cn/*",
+    "https://query.sse.com.cn/*",
+    "https://www.szse.cn/*",
+    "https://www.bse.cn/*",
+    "https://www.swsresearch.com/*",
+    "https://finance.sina.com.cn/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "打开 A股热力树图-自选侧边栏",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "referer_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
