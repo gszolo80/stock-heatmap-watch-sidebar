@@ -1,2 +1,2 @@
 # stock-heatmap-watch-sidebar
-stock-heatmap 自选股侧边栏独立插件
+【模块存档仓库，不作为独立扩展】
