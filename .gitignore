@@ -141,3 +141,18 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Mac系统垃圾文件
+.DS_Store
+**/.DS_Store
+
+# 本地调试元数据
+_metadata/
+
+# 大体积库（防止后续误提交）
+lib/echarts*.js
+lib/plotly*.js
+
+# 本地备份副本文件
+*副本*.js
+
